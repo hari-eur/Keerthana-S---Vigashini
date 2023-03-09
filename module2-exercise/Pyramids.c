@@ -1,3 +1,6 @@
+//2. Write a program to print full, inverted, half pyramid(rows = 7) using while and for loop(nested)
+
+
 #include<stdio.h>
 #include<string.h>
 void pyramid(int n);
@@ -67,6 +70,38 @@ void invertedPyramid(int n)
         printf("\n");
         i++;
     }
-          
-
 }
+/* Sample i/o
+enter number of rows
+7
+
+ Full Pyramid
+       
+      * 
+     * * 
+    * * * 
+   * * * * 
+  * * * * * 
+ * * * * * * 
+* * * * * * * 
+
+ Half Pyramid
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+
+
+ Inverted Pyramid
+* * * * * * * 
+ * * * * * * 
+  * * * * * 
+   * * * * 
+    * * * 
+     * * 
+      * 
+*/
