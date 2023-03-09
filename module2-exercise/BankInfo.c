@@ -1,3 +1,10 @@
+/*1.write a program which covers all control statements, switch case syntax and its functionality.
+
+                Program statement : 
+                1. User should be able to view list of banks.
+                 2. User should be able select a bank and to view its Banking operation and its various account details(Savings, Current, demat)
+                 3. User should be able to list all the benefits of choosen account(interest etc).
+*/
 #include<stdio.h>
 #include<string.h>
 int selectAccount(char[]);
@@ -108,3 +115,27 @@ int selectAccount(char bname[])
     scanf("%d",&accChoice);
     return accChoice;
 }
+/* Sample i/o
+Select a bank from following list
+1.State Bank of India
+2.Indian Overseas Bank
+3.Canara Bank
+2
+
+You have selected Indian Overseas bank
+Accounts available in Indian Overseas bank
+1.Savings Account
+2.Demat Account
+3.Current Account
+1
+
+*International VISA/MASTER/RUPAY Debit Card.
+*Instant Credit of Outstation Cheque upto Rs.15,000/*.
+*Internet banking & Mobile Banking facility.
+*Nomination facility.
+*Standing Instruction Facility.
+*ROI Savings Bank Deposits =4.70 percent p.a.
+
+Press any key to continue or 0 to quit
+*/
+s
