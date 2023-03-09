@@ -7,10 +7,7 @@ int main()
     char bname[30];
   
     do{
-        printf("Select a bank from following list\n");
-        printf("1.State Bank of India\n");
-        printf("2.Indian Overseas Bank\n");
-        printf("3.Canara Bank\n");
+        printf("Select a bank from following list\n1.State Bank of India\n2.Indian Overseas Bank\n3.Canara Bank\n");
         scanf("%d",&bank);
         if(bank==1)
             strcpy(bname,"State Bank Of India");
@@ -29,21 +26,18 @@ int main()
                 {
                     case 1:
                     {
-                        printf("\n \n-Maximum balance /amount No upper limit.\n-No Cheque Book facility available.\n-Withdrawals only using withdrawal form at Branches or through ATMs.\n-Basic Rupay ATM-cum-debit card will be issued.\n");
-			printf("ROI Savings Bank Deposits =2.70 percent  p.a.\n");
-			break;
+                       		printf("\n \n*Maximum balance /amount No upper limit.\n*No Cheque Book facility available.\n*Withdrawals only using withdrawal form at Branches or through ATMs.\n*Basic Rupay ATM*cum*debit card will be issued.\n*ROI Savings Bank Deposits =2.70 percent  p.a.\n");
+		            	break;
                     }
                     case 2:
                     {
-                        printf("\nAccount Maintenance & Safe custody.\nDematerialization.\nConverting the electronic balances to physical (share certificate) form.\nDelivery of electronic balances.\nBlocking securities balance of borrowers.\n");
-                    	printf("ROI Demat Account =8.85 percent p.a.\n");
-			break;
+                       		printf("\n*Account Maintenance & Safe custody.\n*Dematerialization.\n*Converting the electronic balances to physical (share certificate) form.\n*Delivery of electronic balances.\n*Blocking securities balance of borrowers.\n*ROI Demat Account =8.85 percent p.a.\n");
+		            	break;
                     }
                     case 3:
                     {
-                        printf("\nFirst 50 cheque leaves will be free.\nMobile banking\nInterNet banking.\nFree ATM card during first year.\nFree cash deposit upto Rs. 25000/ -per day.\n");
-                    	printf("ROI Current Account = 9.40 percent p.a.\n");
-			break;
+                           	printf("\n*First 50 cheque leaves will be free.\n*Mobile banking\n*InterNet banking.\n*Free ATM card during first year.\n*Free cash deposit upto Rs. 25000/ *per day.\n*ROI Current Account = 9.40 percent p.a.\n");
+		            	break;
                     }
                     default:  printf("\nenter a valid code\n");
                 }
@@ -51,26 +45,23 @@ int main()
             }
             case 2:
             {
-                 ch = selectAccount(bname);
+                ch = selectAccount(bname);
                 switch(ch)
                 {
                     case 1:
                     {
-                        printf("\n-Maximum balance /amount No upper limit.\n-No Cheque Book facility available.\n-Withdrawals only using withdrawal form at Branches or through ATMs.\n-Basic Rupay ATM-cum-debit card will be issued.\n");
-			printf("ROI Savings Bank Deposits =4.70 percent p.a.\n");
-			break;
+				printf("\n*International VISA/MASTER/RUPAY Debit Card.\n*Instant Credit of Outstation Cheque upto Rs.15,000/*.\n*Internet banking & Mobile Banking facility.\n*Nomination facility.\n*Standing Instruction Facility.\n*ROI Savings Bank Deposits =4.70 percent p.a.\n");
+		                break;
                     }
                     case 2:
                     {
-                        printf("\nAccount Maintenance & Safe custody.\nDematerialization.\nConverting the electronic balances to physical (share certificate) form.\nDelivery of electronic balances.\nBlocking securities balance of borrowers.\n");
-                    	printf("ROI Demat Account =7.85 percent p.a.\n");
-			break;
+				printf("\n*Zero Balance Account.\n*No Monthly Average Balance charges.\n*Employee Reimbursement Account (Reimbursement Current Account).\n*Auto Sweep Facility.\n*ROI Demat Account =7.85 percent p.a.\n");
+		            	break;
                     }
                     case 3:
                     {
-                        printf("\nFirst 50 cheque leaves will be free.\nMobile banking\nInterNet banking.\nFree ATM card during first year.\nFree cash deposit upto Rs. 25000/ -per day.\n");
-                    	printf("ROI Current Account = 8.40 percent p.a.\n");
-			break;
+				printf("\n*All senior citizens investing in IOB fixed deposits are eligible to avail an additional 0.50percent on all deposit schemes.\n*Super senior citizens, aged 80 years and above, are provided an additional interest rate of 0.75percent p.a.\n*ROI Current Account = 8.40 percent p.a.\n");
+		            	break;
                     }
                     default:  printf("\nenter a valid code\n");
                 }
@@ -78,32 +69,26 @@ int main()
             }
             case 3:
             {
-                 ch = selectAccount(bname);
+                ch = selectAccount(bname);
                 switch(ch)
                 {
                     case 1:
                     {
-                        printf("\n-Maximum balance /amount No upper limit.\n-No Cheque Book facility available.\n-Withdrawals only using withdrawal form at Branches or through ATMs.\n-Basic Rupay ATM-cum-debit card will be issued.\n");
-			printf("ROi Savings Bank Deposits =4.70 percent p.a.\n");
-			break;
+				printf("\n*ATM cum Debit card.\n*Deposit and withdrawal of cash at branch and ATM at no charges.\n*Passbook, Internet banking, Mobile banking, fund transfers via NEFT/RTGS\n*ROi Savings Bank Deposits =4.70 percent p.a.\n");
+		            	break;
                     }
                     case 2:
                     {
-                        printf("\nAccount Maintenance & Safe custody.\nDematerialization.\nConverting the electronic balances to physical (share certificate) form.\nDelivery of electronic balances.\nBlocking securities balance of borrowers.\n");
-                    	printf("ROI Demat Account =6.85 percent  p.a.\n");
-			break;
+				printf("\n*An interest rate of 0.50percent or higher than the applicable Canara Bank FD interest rates is paid, irrespective of the deposit amount or period.\n* The depositor can choose either monthly, quarterly, or half*yearly interest payments. \n*ROI Demat Account =6.85 percent  p.a.\n");
+		            	break;
                     }
                     case 3:
                     {
-                        printf("\nFirst 50 cheque leaves will be free.\nMobile banking\nInterNet banking.\nFree ATM card during first year.\nFree cash deposit upto Rs. 25000/ -per day.\n");
-                    	printf("\nROI Current Account =  7.6 percent p.a.\n");
-			break;
+				printf("\n*Low Monthly Average Balance: Rs 5,000.\n*Free Cash Deposit upto Rs 5,00,000/* per Month.\n*Convenience to withdraw and deposit cash at all 22000+ SBI Bank branches.\n*Free Cash Withdrawal from Home Branch.\n*ROI Current Account =  7.6 percent p.a.\n");
+		            	break;
                     }
-                  
-                    break;
             }
-            
-           
+            break;
          }
          default:
             {
@@ -111,7 +96,7 @@ int main()
                 break;    
             }
         }
-        printf("\nPress 1 to continue or 0 to quit\n");
+        printf("\nPress any key to continue or 0 to quit\n");
         scanf("%d",&quit);
     }while(quit!=0);
 }
@@ -119,10 +104,7 @@ int selectAccount(char bname[])
 {
     int accChoice;
     printf("Accounts available in %s\n",bname);
-    printf("1.Savings Account\n");
-    printf("2.Demat Account\n");
-    printf("3.Current Account\n");
+    printf("1.Savings Account\n2.Demat Account\n3.Current Account\n");
     scanf("%d",&accChoice);
     return accChoice;
 }
-
