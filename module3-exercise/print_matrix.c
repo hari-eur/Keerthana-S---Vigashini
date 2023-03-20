@@ -11,15 +11,18 @@ Output:
 Replace all the occurance of m with number above it  except the elements in first row.
 */
        
-       
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
     int n,m,arr[10][10];
-    printf("Enter the size of array(odd only):\n");
-    scanf("%d",&n);
+    
+    do{
+        printf("Enter the size of array(odd number):\n");
+        scanf("%d",&n);
+    }while(n%2==0);
+    
     printf("\nEnter the array elements\n");
     for(int i=0;i<n;i++)
     {
@@ -34,10 +37,13 @@ int main()
     {
         for(int j=0;j<n;j++)
         {
+            if(i==0)
+            continue;
             if(arr[i][j]==m)
             {
                 arr[i][j]=arr[i-1][j] ;
             }
+         
         }
     }
     for(int i=0;i<n;i++)
@@ -52,16 +58,19 @@ int main()
 }
 /*
 Sample i/o:
-Enter the size of array(odd only):
+Enter the size of array(odd number):
+2 
+Enter the size of array(odd number):
 3
 
 Enter the array elements
-1 2 3
-8 5 6
-5 5 5
+4 4 4  
+2 3 6 
+4 4 2
 Enter element to be replaced:
-5
-1 2 3 
-8 2 6 
-8 2 6
+4
+4 4 4 
+2 3 6 
+2 3 2 
+*/
 */
