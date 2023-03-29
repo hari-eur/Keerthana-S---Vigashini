@@ -1,3 +1,6 @@
+/*4. Write a program to Check string if it is 8 character length, contains atleast one lowercase and uppercase,one
+number,one special character and possible permutations using pointers*/
+
 #include <stdio.h>
 void permute(char*,int ,int );
 int main()
