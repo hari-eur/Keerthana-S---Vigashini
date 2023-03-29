@@ -1,0 +1,32 @@
+/*1.Setup GDB and run it with program with strings and pointers program(below exercises of strings and pointers). 
+Introduce segmentation fault in your code and use gdb to debug and fix the error step by step.[Upload steps/images and commands output]
+*/
+#include<stdio.h>
+int main()
+{
+        char *str = "string";
+        str[0] = 'z';
+        printf("%s\n",str);
+
+        return 0;
+}
+
+/*
+COMMANDS
+~/c-practice$ gcc rev.c
+/c-practice$ ./a.out
+Segmentation fault
+~/c-practice$ gcc rev.c -g
+~/c-practice$ gdb ./a.out
+*/
+
+//Modified code
+#include<stdio.h>
+int main()
+{
+        char str[] = "string";
+        str[0] = 'z';
+        printf("%s\n",str);
+
+        return 0;
+}
