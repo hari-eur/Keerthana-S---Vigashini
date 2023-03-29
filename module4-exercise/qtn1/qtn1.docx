@@ -1,4 +1,4 @@
-/*1.Setup GDB and run it with program with strings and pointers program(below exercises of strings and pointers). 
+/*1.Setup GDB and run it with program with strings.
 Introduce segmentation fault in your code and use gdb to debug and fix the error step by step.[Upload steps/images and commands output]
 */
 #include<stdio.h>
