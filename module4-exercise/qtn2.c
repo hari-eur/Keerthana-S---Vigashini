@@ -54,3 +54,8 @@ Enter the string
 Abc*163950
 You entered a valid string!!
 */
+
+/*
+Any reason why series of if statements are used inside
+while(str[i]!='\0') loop, instead of if-else statements?
+*/

@@ -17,3 +17,8 @@ int main()
 /* Sample i/o
 1 2 3 4 5 
 */
+
+
+/*
+Any better ways to mentione this? *ptr=&arr[0]
+*/
